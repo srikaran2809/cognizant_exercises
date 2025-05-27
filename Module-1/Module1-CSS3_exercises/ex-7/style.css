@@ -1,0 +1,24 @@
+/* Table Styling */
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Header row */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+/* Data rows */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

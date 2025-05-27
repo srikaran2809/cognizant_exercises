@@ -1,0 +1,30 @@
+<label>Preferred Event Type:</label>
+<select id="preferredEvent" onchange="savePreference()">
+    <option value="music">Music Fest</option>
+    <option value="art">Art Exhibition</option>
+    <option value="sports">Sports Meet</option>
+</select>
+
+<button onclick="clearPreferences()">Clear Preferences</button>
+
+<script>
+    function savePreference() {
+        let event = document.getElementById("preferredEvent").value;
+        localStorage.setItem("eventType", event);
+    }
+
+    function loadPreference() {
+        let storedEvent = localStorage.getItem("eventType");
+        if (storedEvent) {
+            document.getElementById("preferredEvent").value = storedEvent;
+        }
+    }
+
+    function clearPreferences() {
+        localStorage.removeItem("eventType");
+        sessionStorage.clear();
+        alert("Preferences cleared!");
+    }
+
+    window.onload = loadPreference;
+</script>

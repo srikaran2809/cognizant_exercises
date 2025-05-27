@@ -1,0 +1,17 @@
+/* Using HEX and RGBA for colors */
+body {
+    background-color: #f0f0f0; /* Fallback */
+    background-image: url('background.jpg');
+}
+
+/* Gradient for headers */
+.gradient-header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Text styling */
+.event-info {
+    color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,21 @@
+/* Box Model & Layout */
+.eventCard {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    margin: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Outline example */
+.eventCard:hover {
+    outline: 2px dashed red;
+}
+
+/* Visibility vs. Display */
+.hidden-example {
+    visibility: hidden; /*Element remains but is invisible */
+}
+
+.none-example {
+     display: none; /* Element is removed from layout */
+}

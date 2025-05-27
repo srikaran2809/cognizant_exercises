@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Event Portal</title>
+  <style>
+    .event-card {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      max-width: 400px;
+    }
+    .event-card h3 {
+      margin-top: 0;
+    }
+    .registered {
+      background-color: #e0ffe0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upcoming Community Events</h1>
+
+  <!-- Filters -->
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter">
+    <option value="All">All</option>
+    <option value="Music">Music</option>
+    <option value="Art">Art</option>
+    <option value="Technology">Technology</option>
+  </select>
+
+  <label for="searchBox">Search by Name:</label>
+  <input type="text" id="searchBox" placeholder="Type to search...">
+
+  <!-- Event cards -->
+  <div id="events-container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

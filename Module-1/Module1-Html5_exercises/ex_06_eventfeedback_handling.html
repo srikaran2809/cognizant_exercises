@@ -1,0 +1,41 @@
+<form>
+    <label>Phone Number:</label>
+    <input type="text" id="phone" onblur="validatePhone()" placeholder="Enter phone"><br>
+
+    <label>Event Type:</label>
+    <select id="eventType" onchange="displayFee()">
+        <option value="music">Music Fest - ₹500</option>
+        <option value="art">Art Exhibition - ₹300</option>
+        <option value="sports">Sports Meet - ₹400</option>
+    </select><br>
+
+    <label>Feedback:</label>
+    <textarea id="feedback" onkeyup="countCharacters()"></textarea>
+    <p id="charCount">0 characters</p><br>
+
+    <button type="submit" onclick="showConfirmation()">Submit</button>
+</form>
+
+<script>
+    function validatePhone() {
+        let phone = document.getElementById("phone").value;
+        if (!/^\d{10}$/.test(phone)) {
+            alert("Please enter a valid 10-digit phone number.");
+        }
+    }
+
+    function displayFee() {
+        let eventType = document.getElementById("eventType").value;
+        alert("Selected event fee: " + eventType);
+    }
+
+    function showConfirmation() {
+        alert("Thank you for submitting your feedback!");
+    }
+
+    function countCharacters() {
+        let feedback = document.getElementById("feedback").value;
+        document.getElementById("charCount").innerText = feedback.length + " characters";
+    }
+</script>
+

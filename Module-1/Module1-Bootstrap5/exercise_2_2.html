@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap with Local JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Bootstrap CSS from local file -->
+  <link rel="stylesheet" href="./bootstrap-5.3.6-dist/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-primary">Bootstrap with Local JavaScript</h1>
+    <p class="lead">This is an example of using Bootstrap’s JavaScript plugins locally.</p>
+
+    <!-- Button with Tooltip -->
+    <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on the top"> 
+      Hover me
+    </button>
+  </div>
+
+  <!-- Bootstrap JS  importing -->
+  <script src="./bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Initialize the tooltip -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].forEach(el => new bootstrap.Tooltip(el));
+    });
+  </script>
+</body>
+</html>

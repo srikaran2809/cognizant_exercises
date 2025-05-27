@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community Events Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .event-card { border: 1px solid #ccc; margin: 10px 0; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Community Events</h1>
+
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter">
+    <option value="">-- All --</option>
+    <option value="music">Music</option>
+    <option value="art">Art</option>
+  </select>
+
+  <div id="eventsContainer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

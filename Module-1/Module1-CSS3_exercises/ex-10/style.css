@@ -1,0 +1,27 @@
+/* Base Styles */
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.images img{
+    height: 200px;
+    width: 250px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-content {
+        font-size: 14px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+}

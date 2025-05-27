@@ -1,0 +1,18 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Typography styles */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 2;
+    border: 1px black dotted;
+    letter-spacing: 1.5px;
+}

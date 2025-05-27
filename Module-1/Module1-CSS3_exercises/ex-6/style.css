@@ -1,0 +1,38 @@
+/* Remove list bullets */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menudemo{
+    list-style-position: inside;
+     border: 1px solid black;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Link styles */
+.nav-menu a, .nav-menudemo a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.nav-menudemo a:link{
+    color: black;
+}
+
+.nav-menudemo a:visited{
+    color: yellow;
+}
+
+.nav-menu a:hover,.nav-menudemo a:hover{
+    color: #FF5733;
+}
+
+
+.nav-menudemo a:active{
+    color: blue;
+}

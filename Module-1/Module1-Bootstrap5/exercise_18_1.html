@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap Modal Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.6-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 text-center">
+      <h4>Click the button to open the modal</h4>
+
+      <!-- Trigger Button -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch Modal
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            This is a simple Bootstrap modal popup using local files.
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
